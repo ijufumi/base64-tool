@@ -9,13 +9,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="650.0"
-            xmlns="http://javafx.com/javafx/8.0.141"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="jp.ijufumi.tool.base64.controller.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="672.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.ijufumi.tool.base64.controller.Controller">
    <children>
-      <TextArea fx:id="inputText" layoutX="10.0" layoutY="108.0" prefHeight="553.0" prefWidth="475.0" />
-      <TextArea fx:id="outputText" layoutX="515.0" layoutY="108.0" prefHeight="553.0" prefWidth="475.0" />
+      <TextArea fx:id="inputText" layoutX="10.0" layoutY="132.0" prefHeight="529.0" prefWidth="475.0" />
+      <TextArea fx:id="outputText" layoutX="515.0" layoutY="132.0" prefHeight="529.0" prefWidth="475.0" />
       <Label layoutX="488.0" layoutY="338.0" text="→">
          <font>
             <Font size="30.0" />
@@ -34,5 +31,9 @@
             <Font size="30.0" />
          </font>
       </Label>
+      <Button fx:id="inputCopyBtn" layoutX="322.0" layoutY="102.0" mnemonicParsing="false" onAction="#doCopy" text="クリップボードへコピー" />
+      <Button fx:id="outputCopyBtn" layoutX="830.0" layoutY="102.0" mnemonicParsing="false" onAction="#doCopy" text="クリップボードへコピー" />
+      <Button fx:id="inputPasteBtn" layoutX="142.0" layoutY="102.0" mnemonicParsing="false" onAction="#doCopy" text="クリップボードからコピー" />
+      <Button fx:id="outputPasteBtn" layoutX="650.0" layoutY="102.0" mnemonicParsing="false" onAction="#doCopy" text="クリップボードからコピー" />
    </children>
 </AnchorPane>
